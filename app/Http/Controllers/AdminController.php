@@ -144,8 +144,7 @@ class AdminController extends Controller
             $file->move(public_path("upload/admin_images"),$fileName);
             $userData["photo"] = $fileName; 
 
-        } 
-
+        }  
         $userData->save(); 
 
         $notification = array(
